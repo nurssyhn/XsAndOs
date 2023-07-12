@@ -7,18 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7C00D9362A5D671B00DD094E /* XsAndOsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C00D9352A5D671B00DD094E /* XsAndOsApp.swift */; };
-		7C00D9382A5D671B00DD094E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C00D9372A5D671B00DD094E /* ContentView.swift */; };
+		7C00D9362A5D671B00DD094E /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C00D9352A5D671B00DD094E /* AppEntry.swift */; };
+		7C00D9382A5D671B00DD094E /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C00D9372A5D671B00DD094E /* StartView.swift */; };
 		7C00D93A2A5D671E00DD094E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C00D9392A5D671E00DD094E /* Assets.xcassets */; };
 		7C00D93D2A5D671E00DD094E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C00D93C2A5D671E00DD094E /* Preview Assets.xcassets */; };
+		7C00D9442A5D6B7800DD094E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C00D9432A5D6B7800DD094E /* Launch Screen.storyboard */; };
+		7C00D94D2A5D76C600DD094E /* GameModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C00D94C2A5D76C600DD094E /* GameModels.swift */; };
+		7CC722492A5E9B410079D576 /* ViewModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC722482A5E9B410079D576 /* ViewModifiers.swift */; };
+		7CC7224C2A5EB1370079D576 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC7224B2A5EB1370079D576 /* GameView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7C00D9322A5D671B00DD094E /* XsAndOs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XsAndOs.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7C00D9352A5D671B00DD094E /* XsAndOsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XsAndOsApp.swift; sourceTree = "<group>"; };
-		7C00D9372A5D671B00DD094E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7C00D9352A5D671B00DD094E /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
+		7C00D9372A5D671B00DD094E /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
 		7C00D9392A5D671E00DD094E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C00D93C2A5D671E00DD094E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7C00D9432A5D6B7800DD094E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		7C00D94C2A5D76C600DD094E /* GameModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModels.swift; sourceTree = "<group>"; };
+		7CC722482A5E9B410079D576 /* ViewModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModifiers.swift; sourceTree = "<group>"; };
+		7CC7224B2A5EB1370079D576 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +59,13 @@
 		7C00D9342A5D671B00DD094E /* XsAndOs */ = {
 			isa = PBXGroup;
 			children = (
-				7C00D9352A5D671B00DD094E /* XsAndOsApp.swift */,
-				7C00D9372A5D671B00DD094E /* ContentView.swift */,
+				7C00D9352A5D671B00DD094E /* AppEntry.swift */,
+				7C00D9372A5D671B00DD094E /* StartView.swift */,
+				7CC7224D2A5EB1570079D576 /* GameScreen */,
+				7C00D94B2A5D768400DD094E /* Models */,
+				7CC722472A5E9B100079D576 /* Utilities */,
 				7C00D9392A5D671E00DD094E /* Assets.xcassets */,
+				7C00D9432A5D6B7800DD094E /* Launch Screen.storyboard */,
 				7C00D93B2A5D671E00DD094E /* Preview Content */,
 			);
 			path = XsAndOs;
@@ -65,6 +77,30 @@
 				7C00D93C2A5D671E00DD094E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7C00D94B2A5D768400DD094E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C00D94C2A5D76C600DD094E /* GameModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CC722472A5E9B100079D576 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7CC722482A5E9B410079D576 /* ViewModifiers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7CC7224D2A5EB1570079D576 /* GameScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7CC7224B2A5EB1370079D576 /* GameView.swift */,
+			);
+			path = GameScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C00D9442A5D6B7800DD094E /* Launch Screen.storyboard in Resources */,
 				7C00D93D2A5D671E00DD094E /* Preview Assets.xcassets in Resources */,
 				7C00D93A2A5D671E00DD094E /* Assets.xcassets in Resources */,
 			);
@@ -137,8 +174,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C00D9382A5D671B00DD094E /* ContentView.swift in Sources */,
-				7C00D9362A5D671B00DD094E /* XsAndOsApp.swift in Sources */,
+				7C00D9382A5D671B00DD094E /* StartView.swift in Sources */,
+				7C00D94D2A5D76C600DD094E /* GameModels.swift in Sources */,
+				7C00D9362A5D671B00DD094E /* AppEntry.swift in Sources */,
+				7CC722492A5E9B410079D576 /* ViewModifiers.swift in Sources */,
+				7CC7224C2A5EB1370079D576 /* GameView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,7 +235,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -272,8 +312,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,8 +342,10 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
